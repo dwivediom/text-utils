@@ -3,10 +3,13 @@ import "./App.css";
 import Alert from "./component/Alert";
 import Navbar from "./component/Navbar";
 import TextForm from "./component/TextForm";
+import About from "./component/About";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [dmode, setdmode] = useState("light");
- 
+
   const [mode, setmode] = useState({
     backgroundColor: "white",
     color: "black",
@@ -31,27 +34,37 @@ function App() {
     }
   }
 
-
-//  TO SHOW ALERT BOX 
-  const [alert, setalert] = useState(null)
+  //  TO SHOW ALERT BOX
+  const [alert, setalert] = useState(null);
   const showalert = () => {
     setalert("dark mode enabled");
   };
 
   setTimeout(() => {
     setalert(null);
- }, 5000);
-
-
-
-
+  }, 5000);
 
   return (
-    <div className="blank">
-      <Navbar title="heading" cdmode={dmode} changemode={togglemode} />
-      <Alert showalert={showalert} alert={alert} />
-      <TextForm heading="text changer" showalert={showalert} cdmode={mode} />
-    </div>
+    <Router>
+      <div className="blank">
+        <Navbar title="Text util" cdmode={dmode} changemode={togglemode} />
+        <Alert showalert={showalert} alert={alert} />
+
+        <Routes>
+          <Route exact path="/about" element={<About />}/>
+            {/* //exact keyword used to match excat page name other wise react cheak partialy and may cause err? */}
+        
+
+          <Route exact path="/" element={ <TextForm
+              heading="text changer"
+              showalert={showalert}
+              cdmode={mode}
+            />}/>
+           
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
