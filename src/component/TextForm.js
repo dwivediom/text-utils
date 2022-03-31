@@ -3,7 +3,7 @@ var epd;
 
 export default function TextForm(props) {
   const {heading,title}=props; 
-  let  [text ,setText]= useState("enter you text hear"); 
+  let  [text ,setText]= useState("Enter your text hear"); 
 
   //  let [btntxt, setbtntxt]= useState("enable dark mode");
   //  let[darkmode , setdarkmode] =useState({ 
