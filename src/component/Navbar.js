@@ -34,7 +34,10 @@ export default function Navbar(props) {
                   About us 
                 </Link>
               </li>
-             <div className="mx-3"  onClick={props.changemode}>
+             
+            </ul>
+
+            <div className="mx-3"  onClick={props.changemode}>
              <label className="theme">
                 <span>Light</span>
                 <span className="theme__toggle-wrap">
@@ -62,19 +65,6 @@ export default function Navbar(props) {
                 <span>Dark</span>
               </label>
              </div>
-            </ul>
-
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
