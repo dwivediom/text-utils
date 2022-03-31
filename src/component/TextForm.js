@@ -3,7 +3,7 @@ var epd;
 
 export default function TextForm(props) {
   const {heading,title}=props; 
-  let  [text ,setText]= useState("enter you text hear"); 
+  let  [text ,setText]= useState("Enter your text hear"); 
 
   //  let [btntxt, setbtntxt]= useState("enable dark mode");
   //  let[darkmode , setdarkmode] =useState({ 
@@ -47,7 +47,7 @@ export default function TextForm(props) {
     
     <div className="mb-3" style={props.cdmode}>
       <label htmlFor="" className="form-label m-3 text-success" ><h1> {heading}{title} </h1></label>
-      <textarea style={props.cdmode}  type="text" value={text} onChange={handleOnChange} className="form-control " rows="4"placeholder="inter your text hear"/>
+      <textarea style={props.cdmode}  type="text" value={text} onChange={handleOnChange} className="form-control " rows="4"placeholder="enter your text hear"/>
     
       <button onClick={uppercase} className='btn btn-primary m-3 '>Capital letters</button>
         
