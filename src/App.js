@@ -55,7 +55,7 @@ function App() {
             {/* //exact keyword used to match excat page name other wise react cheak partialy and may cause err? */}
         
 
-          <Route exact path="/" element={ <TextForm
+          <Route exact path="/home" element={ <TextForm
               heading="text changer"
               showalert={showalert}
               cdmode={mode}
