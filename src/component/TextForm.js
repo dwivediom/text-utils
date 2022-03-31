@@ -47,7 +47,7 @@ export default function TextForm(props) {
     
     <div className="mb-3" style={props.cdmode}>
       <label htmlFor="" className="form-label m-3 text-success" ><h1> {heading}{title} </h1></label>
-      <textarea style={props.cdmode}  type="text" value={text} onChange={handleOnChange} className="form-control " rows="4"placeholder="inter your text hear"/>
+      <textarea style={props.cdmode}  type="text" value={text} onChange={handleOnChange} className="form-control " rows="4"placeholder="enter your text hear"/>
     
       <button onClick={uppercase} className='btn btn-primary m-3 '>Capital letters</button>
         
