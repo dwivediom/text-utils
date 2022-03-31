@@ -61,7 +61,7 @@ export default function TextForm(props) {
    <div className='container' style={props.cdmode}> 
     <h4> your text summery</h4>
      <p>  there are  {text.length} charecter in your sentence <br/> 
-          {text.split(" ").length -1 } words  <br />
+          {text.split(" ").filter((element)=>{return element.length!==0}).length } words  <br />
           can be read in {0.008 * (text.split(" ").length -1 )}   
       </p>
       <h4> Priview</h4>
