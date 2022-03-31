@@ -14,7 +14,7 @@ export default function TextForm(props) {
  function uppercase(){ 
    let upptxt = text.toUpperCase();
    setText(upptxt);
-   props.showalert();
+  
  } 
 //  const changeMode=()=> { 
 //    if(darkmode.color==="black" ){
