@@ -1,0 +1,9 @@
+.preview-box {
+  width: 80%;
+  min-height: 200px;
+  border: 2px dashed black;
+  border-radius: 10px;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 20px;
+}
