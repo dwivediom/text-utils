@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
+=======
+
+#To check this react app click on this link [text utils ](https://dwivediom.github.io/text-utils/)
+
+>>>>>>> 82387f80e94a0ab4a15b5bfd0cfcaa86d64fa924
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
